@@ -88,6 +88,7 @@ ioMon.on('connection', function(socket){
     //schedule --> no schedule, will fire sound immediately
     socket.on('schedule', function(msg) {
     	console.log('schedule: ' + msg);
+    	console.log('schedule.prog: ' + msg.prog);
     	stat.prog = msg.prog;
     	// stat.sched_start = msg.sched_start;
     	// stat.sched_stop = msg.sched_stop;
